@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Validaciones js</title>
+  <link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+  <!--Información-->
+  <header>
+    <article>
+      <h1>Validaciones JS</h1>
+      <p>Los campos se validan de la siguiente manera</p>
+      <p>
+        <li><strong>Ficha:</strong></> Se puede ingresar cualuiqe caracter
+      </p>
+      <p>
+        <li><strong>Nombre:</strong></> Solo puede ingresar caracteres
+      </p>
+      <p>
+        <li><strong>Apellidos:</strong></> Solo puede ingresar caracteres
+      </p>
+      <p>
+        <li><strong>Correo:</strong></> Solo se puede ingresar un correo valido
+      </p>
+      <p>
+        <li><strong>Teléfono:</strong></> Solo puede ingresar numeros
+      </p>
+      <p>
+        <li><strong>Genero:</strong></> Solo puede seleccionar un genero
+      </p>
+      <p>
+        <li><strong>Ciudad:</strong></> Solo puede seleccionar una ciudad
+      </p>
+      <p>
+        <li><strong>Habilidades:</strong></> Se tiene que seleccionar como minimo 3 habilidades
+      </p>
+    </article>
+  </header>
+
+  <form action="index.html" method="get" novalidate>
+    <!--configurar nombre-->
+    <div>
+      <b>
+        <label for="nombre"> Nombre: </label>
+      </b>
+      <input type="text" size="50" name="nombre" placeholder="Ingrese su nombre" pattern="[A-Za-z]+" required><br><br>
+      <b>
+    </div>
+    <!--configurar apellido-->
+    <div>
+      <b>
+        <label for="apellidos"> Apellidos: </label>
+      </b>
+      <input type="text" size="49" name="apellidos" placeholder="Ingrese sus apellidos" required
+        pattern="[A-Za-z]+"><br><br>
+      <b>
+    </div>
+    <!--input correo-->
+    <div>
+      <b>
+        <label for="email"> Correo: </label>
+      </b>
+      <input type="email" id="email" size="51" name="email" placeholder="Ingrese un correo" required><br><br>
+    </div>
+    <!--input Telefono-->
+    <div>
+      <b>
+        <label for="Telefono"> Telefono: </label>
+      </b>
+      <input type="Tel" id="Telefono" name="Telefono" placeholder="Ingrese telefono" pattern="[0-9]{10}" maxlength="10"
+        required><br><br>
+    </div>
+    <div>
+      <label>
+        <input type="radio" name="genero" value="masculino"> Masculino
+      </label>
+      <label>
+        <input type="radio" name="genero" value="femenino"> Femenino
+      </label>
+      <label>
+        <input type="radio" name="genero" value="otro"> Otro
+    </div><br>
+    <!--selccionar  Ciudad-->
+    <div>
+      <label for="ciudad"><b>Ciudad:</b> </label>
+      <select name="select" id="ciudad" required>
+        <option value="value1" selected></option>
+        <option value="value2" selected>Bucaramanga</option>
+        <option value="value3">Floridablanca</option>
+        <option value="value4">Girón</option>
+        <option value="value4">Piedecuesta</option>
+      </select>
+    </div><br>
+    <!--checkbox habilidades-->
+    <div>
+      <p>Seleccione minimo 3 habilidades</p>
+      <label><input type="checkbox" name="habilidad" value="HTML"> HTML</label><br>
+      <label><input type="checkbox" name="habilidad" value="CSS"> CSS</label><br>
+      <label><input type="checkbox" name="habilidad" value="JavaScript"> JavaScript</label><br>
+      <label><input type="checkbox" name="habilidad" value="PHP"> PHP</label><br>
+      <label><input type="checkbox" name="habilidad" value="JAVA"> JAVA</label><br>
+      <label><input type="checkbox" name="habilidad" value="SQL"> SQL</label><br>
+      <label><input type="checkbox" name="habilidad" value="UML"> UML</label><br>
+
+    </div><br>
+
+    <div>
+      <input type="submit" Enviar="Submit">
+    </div>
+
+  </form>
+</body>
+
+</html>
