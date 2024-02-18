@@ -1,0 +1,91 @@
+:root{
+  --header: 150px;
+
+}
+/** header*/
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+header{
+  text-align: center;
+  font-size: 1rem;
+  padding: 20px 0;
+}
+
+.header__paragraph{
+  font-size: 50px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.container{
+max-width: 1200px;
+margin: 0 auto;
+padding: 8px;
+}
+
+/**estilos card*/
+.card{
+  border: solid 1px rgb(156, 152, 152); 
+  border-radius: 8px;
+  padding: 8px; min-width: 360px;
+}
+.card__tittle{
+text-align: center;
+}
+
+/**lista*/
+
+.lista{
+  text-align: center;
+  padding: 8px;
+
+}
+
+/**control*/
+
+.control{
+display: flex;
+flex-direction: column;
+gap: 1rem;
+padding-bottom: 4px;
+}
+.control--row{
+
+  flex-direction: row;
+}
+
+.controls_label{
+
+}
+
+.control__input{
+padding: 8px;
+border-radius: 0%;
+}
+
+
+.button{
+  padding: 8px;
+  background-color: rgb(127, 129, 129);
+  color: rgb(190, 190, 184);
+  border: none;
+  border-radius: 8px;
+}
+
+.button--blue{
+  background-color: rgb(49, 114, 235);
+}
+
+
+
+/**
